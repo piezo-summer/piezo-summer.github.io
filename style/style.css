@@ -172,7 +172,7 @@ video {
     width: 12vw;
 }
 
-.price {
+.merch .price {
     position: relative;
     text-align: left;
     width: 60%;
