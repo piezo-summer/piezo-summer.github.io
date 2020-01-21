@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     const lineUpNav = document.getElementById('lineUpNav');
     const ticketsNav = document.getElementById('ticketsNav');
     const merchNav = document.getElementById('merchNav');
-    const impressionsNav = document.getElementById('impressionsNav');
+    const imprgalleryNavessionsNav = document.getElementById('galleryNav');
     const trailer = document.getElementById('trailer');
     let lastscrolly = 0;
     let ticking = false;
@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
         });
     });
 
-    impressionsNav.addEventListener('click', () => {
+    galleryNav.addEventListener('click', () => {
         window.scrollTo({
             top: document.getElementById('homeSection').clientHeight + document.getElementById('lineUpSection').clientHeight + document.getElementById('ticketSection').clientHeight + document.getElementById('merchSection').clientHeight + document.getElementById('trailerSection').clientHeight + 1,
             left: 0,

@@ -277,15 +277,14 @@ video {
     width: 60%;
 }
 
-#impressionSection {
+#gallerySection {
     text-align: center;
     background: #1b0e20;
     color: white;
-    /* background:#1b0e20; */
     padding: 1vh 0;
 }
 
-#impressionSection img {
+#gallerySection img {
     width: 60vw;
     margin: 1vh;
 }
