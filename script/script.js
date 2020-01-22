@@ -4,8 +4,9 @@ window.addEventListener('load', () => {
     const lineUpNav = document.getElementById('lineUpNav');
     const ticketsNav = document.getElementById('ticketsNav');
     const merchNav = document.getElementById('merchNav');
-    const imprgalleryNavessionsNav = document.getElementById('galleryNav');
+    const galleryNav = document.getElementById('galleryNav');
     const trailer = document.getElementById('trailer');
+    const menu = document.getElementById('menu');
     let lastscrolly = 0;
     let ticking = false;
 
@@ -15,6 +16,8 @@ window.addEventListener('load', () => {
             left: 0,
             behavior: 'smooth'
         });
+
+        menu.click();
     });
 
     trailerNav.addEventListener('click', () => {
@@ -23,6 +26,8 @@ window.addEventListener('load', () => {
             left: 0,
             behavior: 'smooth'
         });
+
+        menu.click();
     });
 
     lineUpNav.addEventListener('click', () => {
@@ -31,6 +36,8 @@ window.addEventListener('load', () => {
             left: 0,
             behavior: 'smooth'
         });
+
+        menu.click();
     });
 
     ticketsNav.addEventListener('click', () => {
@@ -39,6 +46,8 @@ window.addEventListener('load', () => {
             left: 0,
             behavior: 'smooth'
         });
+
+        menu.click();
     });
 
     merchNav.addEventListener('click', () => {
@@ -47,6 +56,8 @@ window.addEventListener('load', () => {
             left: 0,
             behavior: 'smooth'
         });
+
+        menu.click();
     });
 
     galleryNav.addEventListener('click', () => {
@@ -55,23 +66,25 @@ window.addEventListener('load', () => {
             left: 0,
             behavior: 'smooth'
         });
+
+        menu.click();
     });
 
-    window.addEventListener('scroll', (ev) => {
-    lastscrolly = window.scrollY;
+    window.addEventListener('scroll', () => {
+        lastscrolly = window.scrollY;
 
-    if (!ticking) {
-        window.requestAnimationFrame(() => {
-            if (document.getElementById('homeSection').clientHeight / 2 + 1 < lastscrolly && document.getElementById('homeSection').clientHeight + document.getElementById('trailerSection').clientHeight / 2 + 1 > lastscrolly) {
-                trailer.play();
-            } else {
-                trailer.pause();
-            }
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                if (document.getElementById('homeSection').clientHeight / 2 + 1 < lastscrolly && document.getElementById('homeSection').clientHeight + document.getElementById('trailerSection').clientHeight / 2 + 1 > lastscrolly) {
+                    trailer.play();
+                } else {
+                    trailer.pause();
+                }
 
-            ticking = false;
-        });
+                ticking = false;
+            });
 
-        ticking = true;
-    }
+            ticking = true;
+        }
     });
 });
