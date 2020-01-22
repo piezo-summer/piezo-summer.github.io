@@ -129,6 +129,20 @@ video {
     text-align: center;
 }
 
+#lineUpWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#lineUpWrapper img {
+    width: 20vw;
+    margin: 2vh;
+    border-radius: 3px;
+}
+
 #ticketSection {
     text-align: center;
     display: -webkit-box;
