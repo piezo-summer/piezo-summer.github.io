@@ -17,7 +17,9 @@ window.addEventListener('load', () => {
             behavior: 'smooth'
         });
 
-        menu.click();
+        if (window.innerHeight > window.innerWidth) {
+            menu.click();
+        }
     });
 
     trailerNav.addEventListener('click', () => {
@@ -27,7 +29,9 @@ window.addEventListener('load', () => {
             behavior: 'smooth'
         });
 
-        menu.click();
+        if (window.innerHeight > window.innerWidth) {
+            menu.click();
+        }
     });
 
     lineUpNav.addEventListener('click', () => {
@@ -37,7 +41,9 @@ window.addEventListener('load', () => {
             behavior: 'smooth'
         });
 
-        menu.click();
+        if (window.innerHeight > window.innerWidth) {
+            menu.click();
+        }
     });
 
     ticketsNav.addEventListener('click', () => {
@@ -47,7 +53,9 @@ window.addEventListener('load', () => {
             behavior: 'smooth'
         });
 
-        menu.click();
+        if (window.innerHeight > window.innerWidth) {
+            menu.click();
+        }
     });
 
     merchNav.addEventListener('click', () => {
@@ -57,7 +65,9 @@ window.addEventListener('load', () => {
             behavior: 'smooth'
         });
 
-        menu.click();
+        if (window.innerHeight > window.innerWidth) {
+            menu.click();
+        }
     });
 
     galleryNav.addEventListener('click', () => {
@@ -67,7 +77,9 @@ window.addEventListener('load', () => {
             behavior: 'smooth'
         });
 
-        menu.click();
+        if (window.innerHeight > window.innerWidth) {
+            menu.click();
+        }
     });
 
     window.addEventListener('scroll', () => {
