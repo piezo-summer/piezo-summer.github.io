@@ -25,11 +25,22 @@ nav {
   top: -110vh;
   color: white;
   font-size: 5vw;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: top 600ms ease-in-out;
+  -o-transition: top 600ms ease-in-out;
   transition: top 600ms ease-in-out;
 }
 
@@ -70,18 +81,30 @@ img {
 
 .ticket, .merch {
     border-radius: 3px;
-    box-shadow: 0px 0px 6px 3px rgba(189,189,189,0.5);
+    -webkit-box-shadow: 0px 0px 6px 3px rgba(189,189,189,0.5);
+            box-shadow: 0px 0px 6px 3px rgba(189,189,189,0.5);
     padding: .75vh 3vw;
     margin: 5vh 2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .ticket i {
     font-size: 15vw;
-    transform: rotateZ(15deg);
+    -webkit-transform: rotateZ(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotateZ(15deg);
 }
 
 #vip {
@@ -100,10 +123,19 @@ img {
 
 #imageWrapper {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .image {
@@ -116,8 +148,15 @@ img {
 
 .image img {
     width: 100%;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    transition: -webkit-transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .animationWrapper {
@@ -125,7 +164,9 @@ img {
 }
 
 .image img:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .image span {
@@ -138,9 +179,15 @@ img {
 footer {
     width: 100vw;
     height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #f2f2f2;
 }
 
@@ -149,7 +196,13 @@ footer span {
 }
 
 footer #instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
