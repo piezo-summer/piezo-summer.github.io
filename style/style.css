@@ -45,7 +45,15 @@ nav {
     z-index: 1;
 }
 
-nav p {
+nav div {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav div p {
     margin: 0;
     cursor: pointer;
     -webkit-transition: all 300ms ease-in-out;
