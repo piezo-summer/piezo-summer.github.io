@@ -132,9 +132,14 @@ video {
 #lineUpWrapper {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 #lineUpWrapper img {
@@ -300,10 +305,17 @@ video {
 
 #imageWrapper {
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .image {
@@ -314,25 +326,40 @@ video {
 }
 
 #imageWrapper a:nth-child(1) {
-    transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(-5deg);
+        -ms-transform: rotate(-5deg);
+            transform: rotateZ(-5deg);
 }
 
 #imageWrapper a:nth-child(2) {
-    transform: rotateZ(7deg);
+    -webkit-transform: rotateZ(7deg);
+        -ms-transform: rotate(7deg);
+            transform: rotateZ(7deg);
 }
 
 #imageWrapper a:nth-child(3) {
-    transform: rotateZ(-2deg);
+    -webkit-transform: rotateZ(-2deg);
+        -ms-transform: rotate(-2deg);
+            transform: rotateZ(-2deg);
 }
 
 #imageWrapper a:nth-child(4) {
-    transform: rotateZ(4deg);
+    -webkit-transform: rotateZ(4deg);
+        -ms-transform: rotate(4deg);
+            transform: rotateZ(4deg);
 }
 
 .image img {
     width: 100%;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    transition: -webkit-transform 300ms ease-in-out;
+    -o-transition: transform 300ms ease-in-out;
     transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .animationWrapper {
@@ -340,7 +367,9 @@ video {
 }
 
 .image img:hover {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .image span {
@@ -353,17 +382,29 @@ video {
 footer {
     width: 100%;
     height: 20vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 
 #instagram {
     width: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 #instagram span {
