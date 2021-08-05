@@ -5,240 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Piezo Summer</title>
-    <script src="./script/menu.js"></script>
     <script src="./script/script.js"></script>
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+    <script src="./script/rellax.js"></script>
+    <script src="./script/parallax.js"></script>
+    <link rel="shortcut icon" href="./img/logo_trans.png" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css" media="screen and (min-aspect-ratio: 1/1)">
     <link rel="stylesheet" href="./style/mobileStyle.css" media="screen and (max-aspect-ratio: 1/1)">
     <link rel="stylesheet" href="./style/menu.css" media="screen and (max-aspect-ratio: 1/1)">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
     <script src="https://kit.fontawesome.com/e7df220bd7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="menu">
-        <div class="bar" id="barOne"></div>
-        <div class="bar" id="barTwo"></div>
-        <div class="bar" id="barThree"></div>
-    </div>
-
-    <nav id="nav">
-        <div>
-            <p id="homeNav">Home</p>
-            <p id="trailerNav">Trailer</p>
-            <p id="lineUpNav">Line up</p>
-            <p id="ticketsNav">Tickets</p>
-            <p id="merchNav">Merchandise</p>
-            <p id="galleryNav">Gallery</p>
-        </div>
-    </nav>
+    <img src="./img/logo_trans.png" alt="logo" class="logo rellax" data-rellax-speed="7" style="top: 250vh; right: 4vw;">
+    <img src="./img/logo_trans.png" alt="logo" class="logo rellax" data-rellax-speed="9" style="top: 450vh; left: 4vw;">
+    <img src="./img/logo_trans.png" alt="logo" class="logo rellax" data-rellax-speed="-3" style="top: 300vh; right: 5vw;">
 
     <div id="homeSection">
-        <div id="homeText">
-            <h1>Piezo Summer</h1>
-
-            <img src="./img/wallpaper.jpg" alt="cannot display image">
-        </div>
+        <h1 class="rellax">Piezo Summer</h1>
+        <h5 class="rellax">7 PM CET - <a href="./live/">LIVE</a></h5>
     </div>
 
     <div id="trailerSection">
-        <h1>Trailer</h1>
-        <video src="./vid/trailer.mp4" id="trailer" loop allow="autoplay"></video>
+        <video src="./vid/trailer.mp4" id="trailer" loop allow="autoplay" muted></video>
     </div>
 
-    <div id="lineUpSection">
-        <div id="lineUp">
-            <h1>Line up</h1>
-            <div id="lineUpWrapper">
-                <a href="https://instagram.com/p/B7ftFBjDzjO/">
-                    <img src="./img/JSON_Derulo.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7nKZs_jOhF/">
-                    <img src="./img/ramstein.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7k1x3dD1QO/">
-                    <img src="./img/SudoJuergens.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7XxS8IJMOk/">
-                    <img src="./img/DJ_GHopper.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7iEt_mDm21/">
-                    <img src="./img/DockaToni.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7dFrrFjKdx/">
-                    <img src="./img/matapiro.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7aw4iJpvJ4/">
-                    <img src="./img/edv_ersteDigitaleVerunsicherung.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7ptGlpFvSy/">
-                    <img src="./img/Wolfram_Amadeus_Mozart.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7sbFmoFU6S/">
-                    <img src="./img/davidGetter.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7u1L7IjvFt/">
-                    <img src="./img/samyTheKing.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B7x5JPsjcVz/">
-
-                    <img src="./img/redHotChilliSetters.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B70F6-jjdqa/">
-                    <img src="./img/dieFattastischenVier.png" alt="cannot display image">
-                </a>
-                
-                <a href="https://instagram.com/p/B73JekcDBq6/">
-                    <img src="./img/apache.png" alt="cannot display image">
-                </a>
-
-                <a href="https://instagram.com/p/B76F5jBDCXW/">
-                    <img src="./img/martinGetX.png" alt="cannot display image">
-                </a>
-            </div>
-        </div>
+    <div style="height: 150vh;">
+        <img id="wallpaper" src="./img/wallpaper.png" alt="wallpeper">
     </div>
 
-    <div id="ticketSection">
-        <h1>Tickets</h1>
-
-        <div id="ticketWrapper">
-            <div class="ticket">
-                <h2>VIP Package</h2>
-                <i class="fas fa-ticket-alt" id="vip"></i>
-                <p class="price">Preis: 420€</p>
-                <p class="soldOut">sold out</p>
-            </div>
-
-            <div class="ticket">
-                <h2>Standard Package</h2>
-                <i class="fas fa-ticket-alt"></i>
-                <p class="price">Preis: 69€</p>
-                <p class="soldOut">sold out</p>
-            </div>
-        </div>
+    <div>
+        <img id="dj-zwickl" src="./img/dj_zwickl.png" alt="DJ Zwickl">
     </div>
 
-    <div id="merchSection">
-        <h1>Merchandise</h1>
-
-        <div id="merchWrapper">
-            <div class="row">
-                <div class="merch">
-                    <h2>Piezo love white</h2>
-                    <img src="./img/shirt1.png" alt="cannot display image">
-                    <p class="price">Preis: 29,95€</p>
-                    <p class="merchError">cannot deliver item to your country</p>
-                </div>
-    
-                <div class="merch">
-                    <h2>Piezo love black</h2>
-                    <img src="./img/shirt1_black.png" alt="cannot display image">
-                    <p class="price">Preis: 29,95€</p>
-                    <p class="merchError">cannot deliver item to your country</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="merch">
-                    <h2>Keep Calm Shirt white</h2>
-                    <img src="./img/shirt2.png" alt="cannot display image">
-                    <p class="price">Preis: 29,95€</p>
-                    <p class="merchError">cannot deliver item to your country</p>
-                </div>
-    
-                <div class="merch">
-                    <h2>Keep Calm Shirt black</h2>
-                    <img src="./img/shirt2_black.png" alt="cannot display image">
-                    <p class="price">Preis: 29,95€</p>
-                    <p class="merchError">cannot deliver item to your country</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="merch">
-                    <h2>Piezo Drum Sticks</h2>
-                    <img src="./img/piezo drummer.png" alt="cannot display image">
-                    <p class="price">Preis: 19,95€</p>
-                    <p class="merchError">cannot deliver item to your country</p>
-                </div>
-    
-                <div class="merch">
-                    <h2>Piezo Cap</h2>
-                    <img src="./img/kappe.png" alt="cannot display image">
-                    <p class="price">Preis: 19,95€</p>
-                    <p class="merchError">cannot deliver item to your country</p>
-                </div>
-            </div>
-        </div>
+    <div style="justify-content: space-evenly;">
+        <video src="./vid/matapiroQuote.mp4" id="matapiroQuote" loop allow="autoplay" muted autoplay></video>
+        <video src="./vid/dockaToni.mp4" id="dockaToni" loop allow="autoplay" muted autoplay></video>
     </div>
-
-    <div id="gallerySection">
-        <h1>Gallery</h1>
-
-        <div id="imageWrapper">
-            <a href="https://instagram.com/p/B7Tat05pGdt/">
-                <div class="image">
-                    <div class="animationWrapper">
-                        <img src="./img/ghopper.jpeg" alt="cannot display image">
-                    </div>
-                
-                    <span>DJ GHopper, 2018</span>
-                </div>
-            </a>
     
-            <a href="https://instagram.com/p/B7TazQYJTri/">
-                <div class="image">
-                    <div class="animationWrapper">
-                        <img src="./img/plane.jpeg" alt="cannot display image">
-                    </div>
-                    
-                    <span>VIP plane</span>
-                </div>
-            </a>
-    
-            
-            <a href="https://instagram.com/p/B7Taq-Ppdzv/">
-                <div class="image">
-                    <div class="animationWrapper">
-                        <img src="./img/piezoisland.png" alt="cannot display image">
-                    </div>
-                
-                    <span>Piezo Island</span>
-                </div>
-            </a>
-
-            <a href="https://instagram.com/p/B7Ta3bDpCye/">    
-                <div class="image">
-                    <div class="animationWrapper">
-                        <img src="./img/samy.jpeg" alt="cannot display image">
-                    </div>
-                    
-                    <span>Samy the King with fan</span>
-                </div>
-            </a>
-        </div>
-    </div>
-
     <footer>
-        <a href="https://www.instagram.com/piezosummer/">
-            <div id="instagram">
-                <span>follow us on instagram</span>
-                <svg aria-label="Instagram" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24">
-                    <path d="M13.86.13A17 17 0 008 1.26 11 11 0 003.8 4 12.22 12.22 0 001 8.28 18 18 0 00-.11 14.1c-.13 2.55-.13 3.38-.13 9.9s0 7.32.13 9.9A18 18 0 001 39.72 11.43 11.43 0 003.8 44 12.17 12.17 0 008 46.74a17.75 17.75 0 005.82 1.13c2.55.13 3.38.13 9.9.13s7.32 0 9.9-.13a17.82 17.82 0 005.83-1.13A11.4 11.4 0 0043.72 44a11.94 11.94 0 002.78-4.24 17.7 17.7 0 001.13-5.82c.13-2.55.13-3.38.13-9.9s0-7.32-.13-9.9a17 17 0 00-1.13-5.86A11.31 11.31 0 0043.72 4a12.13 12.13 0 00-4.23-2.78A17.82 17.82 0 0033.66.13C31.11 0 30.28 0 23.76 0s-7.31 0-9.9.13m.2 43.37a13.17 13.17 0 01-4.47-.83 7.25 7.25 0 01-2.74-1.79 7.25 7.25 0 01-1.79-2.74 13.23 13.23 0 01-.83-4.47c-.1-2.52-.13-3.28-.13-9.7s0-7.15.13-9.7a12.78 12.78 0 01.83-4.44 7.37 7.37 0 011.79-2.75A7.35 7.35 0 019.59 5.3a13.17 13.17 0 014.47-.83c2.52-.1 3.28-.13 9.7-.13s7.15 0 9.7.13a12.78 12.78 0 014.44.83 7.82 7.82 0 014.53 4.53 13.12 13.12 0 01.83 4.44c.13 2.51.13 3.27.13 9.7s0 7.15-.13 9.7a13.23 13.23 0 01-.83 4.47 7.9 7.9 0 01-4.53 4.53 13 13 0 01-4.44.83c-2.51.1-3.28.13-9.7.13s-7.15 0-9.7-.13m19.63-32.34a2.88 2.88 0 102.88-2.88 2.89 2.89 0 00-2.88 2.88M11.45 24a12.32 12.32 0 1012.31-12.35A12.33 12.33 0 0011.45 24m4.33 0a8 8 0 118 8 8 8 0 01-8-8"></path>
-                </svg>
-            </div>
-        </a>
+        <a href="https://www.instagram.com/piezosummer/">follow us on instagram</a>
     </footer>
 </body>
 </html>
