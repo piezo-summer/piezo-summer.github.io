@@ -1,11 +1,3 @@
-:root {
-    --primary: #CFADD9;
-    --secondary: #D6BFD9;
-    --tertiary: #8898F2;
-    --light: #F0E9F2;
-    --marine: #6BF2F2;
-}
-
 body {
     width: 100vw;
     height: auto;
@@ -81,6 +73,10 @@ a {
     text-align: center;
     background: transparent;
     color: white;
+}
+
+#wallpaper-wrapper {
+    height: 150vh;
 }
 
 video {
